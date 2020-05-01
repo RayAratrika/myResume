@@ -276,10 +276,10 @@ hr{
     .right{
         display:block;
         margin-top: 8%;
-        font-size: 94%;
+        font-size: 26px;
     }
     #name{
-        font-size: 22px;
+        font-size: 28px;
     }
     #fname{
         font-size: 36px;
@@ -293,6 +293,17 @@ hr{
     }
     .whole{
         background-image: url(./images/me1.jpg);
-        background-size: 860px 550px;
+        background-size: 920px 600px;
+    }
+    #sharp{
+        width: 110px;
+        height: auto;
+    }
+    .about_me, .my_projects, .my_resume{
+        font-size: 110%;
+        border: 0;
+    }
+    .description{
+        font-size: 72px;
     }
 }
