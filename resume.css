@@ -35,7 +35,7 @@ canvas{
     z-index: -1;
     width: 100%; 
     height: 200%; 
-    margin-top: -30%;
+    margin-top: -50%;
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: 50% 50%;
@@ -303,7 +303,7 @@ hr{
     .whole{
         background-image: url(./images/me1.jpg);
         background-size: 920px 600px;
-        background-attachment: absolute;
+        background-attachment: scroll;
     }
     #sharp{
         width: 160px;
