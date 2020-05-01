@@ -303,6 +303,7 @@ hr{
     .whole{
         background-image: url(./images/me1.jpg);
         background-size: 920px 600px;
+        background-attachment: absolute;
     }
     #sharp{
         width: 160px;
