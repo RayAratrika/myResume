@@ -1,0 +1,269 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: cursive;
+    background: #151515;
+    background-image: linear-gradient(rgb(23, 57, 129),rgb(54, 14, 109));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.preLoad{
+    display: none;
+}
+
+.header{
+    margin-top: 8%;
+}
+.postLoad{
+}
+
+canvas{ 
+    display: block; 
+}
+
+#particles-js{ 
+    position:fixed;
+    z-index: -1;
+    width: 100%; 
+    height: 200%; 
+    margin-top: -30%;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%;
+}
+
+.whole{
+    background-image: url(./images/me1.jpg);
+    background-size: cover;
+    height: 600px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    z-index: 9;
+}
+.left, .right{
+    width: 50%;
+    z-index: 1;
+}
+.left{
+    text-align: left;
+    padding: 1% 4%;
+}
+#my_logo{
+    width:125px;
+    height: auto;
+    text-align: center;
+    margin: -1% auto 0 auto;
+}
+.right{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+    padding: 2% 2%;
+}
+.flex{
+    transition: transform 1s;
+    padding: 2%;
+}
+.flex:hover{
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    position: relative;
+}
+
+#partition{
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#self_introduction{
+    position: absolute;
+    display: flex;
+    z-index: 9;
+    justify-content: space-evenly;
+    padding-top: 0;
+}
+
+#intro{
+    z-index: 9;
+}
+
+.about_me{
+    z-index: 1;
+    width: 86%;
+    margin: auto;
+}
+
+.about_me p{
+    font-size: 20px;
+}
+
+#name{
+    display: none;
+    width: 90%;
+    text-align: right;    
+    padding-top: 16%;
+    padding-bottom: 4%;
+    font-size: 58px;
+    z-index: 1;
+}
+
+#fname{
+    font-size: 86px;
+    padding-left: 1%;
+    font-weight: 600;
+    background: linear-gradient(to right, rgb(255, 243, 75) 0%, rgb(218, 155, 255) 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#lname{
+    font-size: 84px;
+    font-weight: 600;
+    padding-left: 24px;
+    color: rgb(10, 218, 114);
+}
+
+#picture_of_me{
+    display: flex;
+    width:100%; 
+    justify-content: flex-end; 
+    padding-bottom: 4%;
+}
+
+#picture_of_me img{
+    width: 220px; 
+    height: auto; 
+    margin-top: 2%;
+}
+
+#left_part{
+    display: flex;
+    position: fixed;
+    width: 45%;
+    height: 700px;
+    background: rgb(0, 0, 0);
+    opacity: 0.15;
+}
+   
+#left_part:before{
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: inherit;
+      z-index: -1;
+      bottom: 0;
+      transform-origin: right bottom;
+      transform: skew(165deg);
+      
+}
+.my_projects{
+    margin-top: 8%;
+}
+
+.my_projects::after{
+    clear: left;
+}
+
+.my_projects .cards{
+    width: 85%; 
+    margin-left: 10%; 
+    height: 300px;
+    display: flex; 
+    justify-content: center ;
+}
+.my_projects .cards .image-box{
+    width: 24%; 
+    height: 220px; 
+    border-radius: 30px; 
+    background-color: azure; 
+    text-align: center; 
+    transition: transform 1s;
+}
+.my_projects .cards .image-box img{
+    width: 190px; 
+    height: auto;
+}
+.my_projects .cards .image-box:hover{
+    transform: scale(1.1);
+}
+.my_projects .cards .description{
+    text-align: left; 
+    font-size: 18px; 
+    padding-left: 4%;
+    width: 50%;
+}
+.my_projects .cards .title{
+    font-size: 42px; 
+    font-weight: bold;
+}
+
+hr{
+    width: 20%;
+    height: 2px;
+    margin: auto;
+    background-color: white;
+    border: none;
+    margin-top: -4%;
+}
+
+.my_resume p{
+    font-size: 20px;
+}
+
+.photography{
+    margin-top: 8%;
+    width: 85%;
+    margin: auto;
+}
+
+.photography img{
+    width: 270px;
+    height: auto;
+    margin: -0.2%;
+}
+
+.flexBox{
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    background-color: black;
+    padding-top: 2%;
+    padding-right: 16%;
+    padding-bottom: 2%;
+    padding-left: 16%;
+}
+
+.flex{
+    cursor: pointer;
+}
+
+.contact_me img{
+    width: 55px;
+    height: auto;
+}
