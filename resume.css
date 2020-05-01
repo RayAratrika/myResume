@@ -245,7 +245,7 @@ hr{
 .photography img{
     width: 270px;
     height: auto;
-    margin: -0.2%;
+    margin: -0.3%;
 }
 
 .flexBox{
@@ -266,4 +266,32 @@ hr{
 .contact_me img{
     width: 55px;
     height: auto;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar{
+        display: block;
+        width: 40%;
+    }
+    .right{
+        display:block;
+        margin-top: 8%;
+        font-size: 94%;
+    }
+    #name{
+        font-size: 22px;
+    }
+    #fname{
+        font-size: 36px;
+
+    }
+    #lname{
+        font-size:32px;
+    }
+    #left_part{
+        display:none;
+    }
+    .whole{
+        background-image: url(./images/me1.jpg);
+        background-size: 860px 550px;
 }
