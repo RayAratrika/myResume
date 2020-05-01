@@ -121,6 +121,13 @@ a{
     font-size: 20px;
 }
 
+#content{
+    border-left: 6px solid whitesmoke; 
+    border-right: 6px solid whitesmoke; 
+    padding-left: 7%; 
+    padding-right: 7%;
+}
+
 #name{
     display: none;
     width: 90%;
@@ -186,10 +193,6 @@ a{
     margin-top: 8%;
 }
 
-.my_projects::after{
-    clear: left;
-}
-
 .my_projects .cards{
     width: 85%; 
     margin-left: 10%; 
@@ -208,6 +211,11 @@ a{
 .my_projects .cards .image-box img{
     width: 190px; 
     height: auto;
+}
+#sharp{
+    width: 190px; 
+    height: auto; 
+    margin-top: 63px;
 }
 .my_projects .cards .image-box:hover{
     transform: scale(1.1);
@@ -271,22 +279,23 @@ hr{
 @media screen and (max-width: 480px) {
     .navbar{
         display: block;
-        width: 40%;
+        width: 60%;
     }
     .right{
         display:block;
         margin-top: 8%;
-        font-size: 26px;
+        font-size: 30px;
     }
     #name{
-        font-size: 28px;
+        margin-top: -8%;
+        font-size: 34px;
+        padding-top: 16%;
     }
     #fname{
-        font-size: 36px;
-
+        font-size: 40px;
     }
     #lname{
-        font-size:32px;
+        font-size:40px;
     }
     #left_part{
         display:none;
@@ -296,14 +305,61 @@ hr{
         background-size: 920px 600px;
     }
     #sharp{
-        width: 110px;
+        width: 160px;
+        height: auto;
+        margin-top: 73px;
+        margin-left: 12px;
+    }
+    .my_resume p{
+        font-size: 24px;
+    }
+    .photography{
+        width: 90%;
+        margin: auto;
+    }
+    #content{
+        width: 96%;
+        margin: auto;
+        padding: 0;
+        font-size: 24px;
+        border: none;
+    }
+    .contact_me img{
+        width: 65px;
         height: auto;
     }
-    .about_me, .my_projects, .my_resume{
-        font-size: 110%;
-        border: 0;
+    .contact_me .flexBox{
+        font-size: 16px;
+        padding-top: 2%;
+        padding-right: 4%;
+        padding-bottom: 2%;
+        padding-left: 4%;
     }
-    .description{
-        font-size: 72px;
+    .my_projects .cards{
+        width: 88%; 
+        margin: auto; 
+        height: 300px;
+        display: flex; 
+        justify-content: center ;
+    }
+    .my_projects .cards .image-box{
+        width: 28%; 
+        height: 220px; 
+        border-radius: 30px; 
+        background-color: azure; 
+        text-align: center; 
+    }
+    .my_projects .cards .image-box img{
+        width: 200px; 
+        height: auto;
+    }
+    .my_projects .cards .image-box #sharp{
+        width: 170px; 
+        height: auto; 
+        margin-top: 73px;
+    }
+    .my_projects .cards .description{
+        font-size: 20px; 
+        width: 58%;
     }
 }
