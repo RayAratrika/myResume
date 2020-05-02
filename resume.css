@@ -389,12 +389,13 @@ hr{
         margin-top: 4%;
     }
     .my_resume .photography .gallery img{
-        margin: 4% 0.5% ;
-        width: 80px;
+        margin: 8% 2% ;
+        width: 90px;
         height: auto;
     }
     .my_resume .photography #displayImage{
-        width: 500px;
+        width: 720px;
         height: auto;
+	margin: auto;
     }
 }
