@@ -378,7 +378,7 @@ hr{
         margin-top: 73px;
     }
     .my_projects .cards .description{
-        font-size: 24px; 
+        font-size: 26px; 
         width: 58%;
     }
     .my_resume .photography .gallery{
@@ -386,16 +386,16 @@ hr{
         margin: auto;
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
-        margin-top: 4%;
+        margin-top: 6%;
     }
     .my_resume .photography .gallery img{
-        margin: 10% 8% ;
-        width: 120px;
+        margin: 8% 8% ;
+        width: 110px;
         height: auto;
     }
-    .my_resume .photography #displayImage{
-        width: 60%;
+    .my_resume .photography #displayImage img{
+        width: 560px;
         height: auto;
-	margin: auto;
+        margin: auto;
     }
 }
