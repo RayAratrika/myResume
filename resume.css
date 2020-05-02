@@ -250,10 +250,29 @@ hr{
     margin: auto;
 }
 
-.photography img{
-    width: 270px;
+.photography #displayImage img{
+    width: 350px;
     height: auto;
-    margin: -0.3%;
+    border-radius: 30px;
+}
+
+.photography .gallery{
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+    margin-top: 4%;
+}
+
+.photography .gallery img{
+    width: 70px;
+    height: auto;
+    margin: 2% 0.5% ;
+    border-radius: 50%;
+    transition: transform 1s;
+}
+
+.photography .gallery img:hover{
+    transform: scale(1.2);
 }
 
 .flexBox{
@@ -276,7 +295,7 @@ hr{
     height: auto;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
     .navbar{
         display: block;
         width: 60%;
@@ -303,7 +322,6 @@ hr{
     .whole{
         background-image: url(./images/me1.jpg);
         background-size: 920px 600px;
-        background-attachment: scroll;
     }
     #sharp{
         width: 160px;
@@ -362,5 +380,15 @@ hr{
     .my_projects .cards .description{
         font-size: 20px; 
         width: 58%;
+    }
+    .my_resume .photography .gallery{
+        width: 70%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        margin-top: 4%;
+    }
+    .my_resume .photography .gallery img{
+        margin: 4% 0.5% ;
     }
 }

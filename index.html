@@ -111,20 +111,21 @@
 
             <div class='photography' style='margin-top: 6%;'>
                 <h1>I also do photography.</h1>
+                <div id='displayImage'><img></div>
                 <div>
-                    <div>
-                        <img src='./images/boat.jpg'>
-                        <img src='./images/IMG_20190823_173559369_BURST001.jpg'>
-                        <img src='./images/IMG_1075.JPG'>
-                        <img src='./images/squirrel.jpg'>
-                        <img src='./images/pigeon.jpg'>
-                        <img src='./images/IMG_1040.JPG'>
-                        <img src='./images/IMG_20190728_131727359.jpg'>
-                        <img src='./images/IMG_20190728_130758_644.jpg'>
-                        <img src='./images/IMG_20190726_163910270.jpg'>
-                        <img src='./images/IMG_20171207_014001129.jpg'>
-                        <img src='./images/IMG_0898.jpg'>
-                        <img src='./images/lights.png'>
+                    <div class='gallery'>
+                        <img src='./images/boat.jpg' id='first' onclick=selected(this.src)>
+                        <img src='./images/IMG_20190823_173559369_BURST001.jpg' onclick=selected(this.src)>
+                        <img src='./images/IMG_1075.JPG' onclick=selected(this.src)>
+                        <img src='./images/squirrel.jpg' onclick=selected(this.src)>
+                        <img src='./images/pigeon.jpg' onclick=selected(this.src)>
+                        <img src='./images/IMG_1040.JPG' onclick=selected(this.src)>
+                        <img src='./images/IMG_20190728_131727359.jpg' onclick=selected(this.src)>
+                        <img src='./images/IMG_20190728_130758_644.jpg' onclick=selected(this.src)>
+                        <img src='./images/IMG_20190726_163910270.jpg' onclick=selected(this.src)>
+                        <img src='./images/IMG_20171207_014001129.jpg' onclick=selected(this.src)>
+                        <img src='./images/IMG_0898.jpg' onclick=selected(this.src)>
+                        <img src='./images/lights.png' onclick=selected(this.src)>
                     </div>
                 </div>
             </div>
@@ -173,7 +174,17 @@
     <script>
         setInterval(() => {
             $('#name').slideDown(2000);
-        }, 5000);
+        }, 4000);
+
+        function selected(imageSource){
+            var displayImage = document.getElementById('displayImage');
+            var image = document.createElement('img');
+            image.setAttribute('src',imageSource);
+
+            displayImage.replaceChild(image, displayImage.firstChild);
+        }
+
+        document.getElementById('first').click();
 
     </script>
 
