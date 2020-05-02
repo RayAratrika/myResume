@@ -393,4 +393,8 @@ hr{
         width: 80px;
         height: auto;
     }
+    .my_resume .photography #displayImage{
+        width: 500px;
+        height: auto;
+    }
 }
