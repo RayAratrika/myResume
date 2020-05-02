@@ -276,7 +276,7 @@ hr{
     height: auto;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 770px) {
     .navbar{
         display: block;
         width: 60%;
