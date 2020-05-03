@@ -91,23 +91,21 @@
                 <div class='image-box' style='background-color: black;'>
                     <img src='./images/arodhiLogo.jpg' style='width: 130px; height: auto; margin-top: 53px;'>
                 </div>
-                <div class='description'>
-                    <p>
-                        <span class='title'>Arodhi</span><br><br>
-                        A website that gives you a collection of data for adoption (for
-                        pets/children/volunteering/charity) agencies from across Banaglore,
-                        In.
-                    </p>
-                </div>
+                <p class='description'>
+                    <span class='title'>Arodhi</span><br><br>
+                    A website that gives you a collection of data for adoption (for
+                    pets/children/volunteering/charity) agencies from across Banaglore,
+                    In.
+                </p>
             </div>
         </div>
 
         <div class='my_resume' id='my_resume' style=' margin-top: 6%;'>
             <p class='heading' style="font-size: 52px; font-weight: 700px;">MY RESUME</p>
             <p style="width: 100%;">To see more of my work, check out my <a href='https://github.com/RayAratrika'
-                    target="_blank" style='font-size: 1.2em;'><em>GitHub Account.</em></a></p>
+                    target="_blank" style='font-size: 1.2em;'><b><u>GitHub Account.</u></b></a></p>
             <p>Click here to check out <a href="resume.pdf" target="_blank" style='font-size: 1.2em;'>
-                    <em>my Resume</em></a>. Feel free to keep a copy!</p>
+                    <b><u>my Resume</u></b></a>. Feel free to keep a copy!</p>
 
             <div class='photography' style='margin-top: 6%;'>
                 <h1>I also do photography.</h1>
@@ -176,10 +174,10 @@
             $('#name').slideDown(2000);
         }, 4000);
 
-        function selected(imageSource){
+        function selected(imageSource) {
             var displayImage = document.getElementById('displayImage');
             var image = document.createElement('img');
-            image.setAttribute('src',imageSource);
+            image.setAttribute('src', imageSource);
 
             displayImage.replaceChild(image, displayImage.firstChild);
         }
@@ -224,7 +222,7 @@
                     "opacity": 0.4,
                     "width": 2
                 }
-            }, 
+            },
             "interactivity": {
                 "events": {
                     "onhover": {

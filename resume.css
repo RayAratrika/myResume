@@ -23,8 +23,6 @@ body{
 .header{
     margin-top: 8%;
 }
-.postLoad{
-}
 
 canvas{ 
     display: block; 
@@ -44,7 +42,7 @@ canvas{
 .whole{
     background-image: url(./images/me1.jpg);
     background-size: cover;
-    height: 600px;
+    height: 720px;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -172,7 +170,7 @@ a{
     display: flex;
     position: fixed;
     width: 45%;
-    height: 700px;
+    height: 1024px;
     background: rgb(0, 0, 0);
     opacity: 0.15;
 }
@@ -295,7 +293,7 @@ hr{
     height: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
     .navbar{
         display: block;
         width: 60%;
@@ -397,5 +395,37 @@ hr{
         width: 560px;
         height: auto;
         margin: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .whole{
+        background-image: url(./images/me1.jpg);
+        background-size: 1024px 720px;
+    }
+    .my_resume p{
+        font-size: 26px;
+    }    
+    .my_projects .cards .description{
+        font-size: 26px; 
+        width: 68%;
+        margin-top: 0;
+        height: 270px;
+    }
+    .my_projects .cards .title{
+        font-size: 42px; 
+        font-weight: bold;
+    }
+    .my_resume .photography .gallery img{
+        margin: 4% 8% 12% 8%;
+        width: 110px;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    #left_part{
+        height: 900px;
+        width: 35%;
     }
 }
