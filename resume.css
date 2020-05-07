@@ -221,6 +221,7 @@ a{
 .my_projects .cards .description{
     text-align: left; 
     font-size: 18px; 
+    margin-top: 0;
     padding-left: 4%;
     width: 50%;
 }
@@ -248,6 +249,7 @@ hr{
     border-image-source: linear-gradient(45deg, rgb(255, 238, 0),rgb(55, 224, 21));
     border-image-slice: 1; 
     padding: 0.5%;
+    margin: 0.6% 1%;
 }
 
 .photography{
@@ -340,10 +342,13 @@ hr{
         margin-left: 12px;
     }
     .my_resume p{
-        font-size: 28px;
+        font-size: 24px;
+    }
+    .my_resume{
+        width: 96%;
     }
     .photography{
-        width: 90%;
+        width: 98%;
         margin: auto;
     }
     #content{
@@ -389,7 +394,7 @@ hr{
     }
     .my_projects .cards .description{
         font-size: 26px; 
-        width: 58%;
+        width:68%;
     }
     .my_resume .photography .gallery{
         width: 70%;
@@ -407,6 +412,9 @@ hr{
         width: 560px;
         height: auto;
         margin: auto;
+    }
+    .photography #displayImage{
+        height: 560px;
     }
 }
 
