@@ -241,6 +241,14 @@ hr{
 .my_resume p{
     font-size: 20px;
 }
+.my_resume a{
+    font-size: 1.2em; 
+    border-radius: 30px; 
+    border: 3px solid;
+    border-image-source: linear-gradient(45deg, rgb(255, 238, 0),rgb(55, 224, 21));
+    border-image-slice: 1; 
+    padding: 0.5%;
+}
 
 .photography{
     margin-top: 8%;
@@ -252,6 +260,10 @@ hr{
     width: 350px;
     height: auto;
     border-radius: 30px;
+}
+
+.photography #displayImage{
+    height: 350px;
 }
 
 .photography .gallery{
