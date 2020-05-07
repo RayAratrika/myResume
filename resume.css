@@ -342,10 +342,11 @@ hr{
         margin-left: 12px;
     }
     .my_resume p{
-        font-size: 24px;
+        font-size: 26px;
     }
     .my_resume{
         width: 96%;
+	margin: auto;
     }
     .photography{
         width: 98%;
@@ -394,7 +395,7 @@ hr{
     }
     .my_projects .cards .description{
         font-size: 26px; 
-        width:68%;
+        width:64%;
     }
     .my_resume .photography .gallery{
         width: 70%;
